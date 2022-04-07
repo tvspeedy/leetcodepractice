@@ -43,4 +43,15 @@ public class Utils {
 //		System.out.println( == output ? RESULT_CORRECT : RESULT_NOT_CORRECT);
 
 	}
+
+	public static void checkResult(List<?> list1, List<?> output) {
+		System.out.println(CALCULATED_RESULT + list1);
+		System.out.println(EXPECTED_OUTPUT + list1.equals(output));
+	}
+
+	public static void checkResult(int[][] insert, int[][] output) {
+		System.out.println(CALCULATED_RESULT + Arrays.deepToString(insert));
+		System.out.println(EXPECTED_OUTPUT + Arrays.deepToString(output));
+
+	}
 }
